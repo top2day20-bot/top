@@ -2,30 +2,24 @@
 <html lang="ar">
 <head>
   <meta charset="UTF-8">
-  <title>المنتجات</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>المتجر</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="container">
-
   <aside class="sidebar">
-    <h2>القائمة</h2>
-    <ul>
-      <li onclick="filterProducts('all')">الكل</li>
-      <li onclick="filterProducts('mobiles')">موبايلات</li>
-      <li onclick="filterProducts('accessories')">إكسسوارات</li>
-      <li><a href="contact.html">تواصل</a></li>
-    </ul>
+    <h2>المتجر</h2>
+    <button onclick="filterProducts('all')">الكل</button>
+    <button onclick="filterProducts('phone')">موبايلات</button>
+    <button onclick="filterProducts('acc')">إكسسوارات</button>
+    <button onclick="alert('تواصل معنا قريبًا')">تواصل</button>
+    <a class="admin-link" href="admin.html">صفحة الأدمن</a>
   </aside>
 
-  <main class="content">
-    <h2>المنتجات</h2>
-    <div id="products"></div>
-  </main>
-
+  <main class="products" id="products"></main>
 </div>
 
 <script src="script.js"></script>
 </body>
+</html>
