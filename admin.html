@@ -2,26 +2,22 @@
 <html lang="ar">
 <head>
   <meta charset="UTF-8">
-  <title>لوحة الأدمن</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الأدمن</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="admin">
 
-<div class="admin">
+<h2>لوحة التحكم</h2>
 
-  <h2>إضافة منتج</h2>
+<input id="name" placeholder="اسم المنتج">
+<input id="price" placeholder="السعر">
+<input id="image" placeholder="اسم الصورة jpg">
+<select id="type">
+  <option value="phone">موبايل</option>
+  <option value="acc">إكسسوار</option>
+</select>
 
-  <input id="name" placeholder="اسم المنتج">
-  
-  <select id="category">
-    <option value="mobiles">موبايلات</option>
-    <option value="accessories">إكسسوارات</option>
-  </select>
-
-  <button onclick="addProduct()">إضافة المنتج</button>
-
-</div>
+<button onclick="addProduct()">إضافة المنتج</button>
 
 <script src="script.js"></script>
 </body>
